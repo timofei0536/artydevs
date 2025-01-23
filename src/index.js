@@ -79,9 +79,9 @@ import './assets/js/select';
 	// 1.1 header--fixed;
 	// 1.2 features
 	// 1.2 about
+
 // Minimize HTML;
 // Awwwards description - Portfolio;
-// change favicon;
 // где-то скорость проседает
 
 
