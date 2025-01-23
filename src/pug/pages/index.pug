@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Home page';
+    - var hideFooter = true;
+
+block content
+    include ../includes/main-screen
+    .gsap-bg
+        include ../includes/numbers
+        include ../includes/about
+    div(style='overflow:hidden;')
+        include ../includes/mission
+        include ../includes/choose
+   
+
+

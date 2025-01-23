@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+
+img {
+	max-width: 100%;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input {
+	-webkit-border-radius: 0px;
+	-webkit-appearance: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+html,
+body {
+	font-size: calc(100vw / ( (#{$wrap} + var(--p-page)*2) / 10 ) );
+	
+	@media screen and (max-width: $large_tablet) {
+		font-size: 83%;
+	}
+
+	@media screen and (max-width: $large_mobile) {
+		font-size: calc(100vw / ( (#{$wrap_mobile} + var(--p-page)*2) / 10 ) );
+	}
+}
+
+body {
+	font-family: $primary-f;
+	color: $color--white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-size: 1.6rem;
+	user-select: none;
+	background: $bg--black;
+
+	&.scroll {
+		overflow: hidden;
+	}
+
+	&.body--start {
+		overflow: initial !important;
+	}
+
+}
+
+.body {
+	&__wrap {
+		&--scroll {
+			pointer-events: none;
+		}
+	}
+}
+
+main {
+	flex-grow: 1;
+}
+
+.gsap-bg {
+	position: relative;
+	z-index: 2;
+}
+
+.center-wrap {
+	width: 100%;
+	margin: 0px auto;
+
+	max-width: calc(100% - #{$p-page*2/10*1rem});
+
+	@media screen and (max-width: $large_tablet) {
+		max-width: calc(480px - #{$p-page-mobile*2/10*1rem});
+	}
+
+
+	@media screen and (max-width: $large_mobile) {
+		max-width: calc(100% - #{$p-page-mobile*2/10*1rem});
+	}
+
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0px;
+}
+
+.simple-title {
+	text-align: center;
+	margin-bottom: 10rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 13rem;
+	line-height: 120%;
+
+	&--right {
+		text-align: right;
+	}
+
+	&--left {
+		text-align: left;
+	}
+
+	@media screen and (max-width: $large_tablet) {
+		font-size: 3.5rem;
+		margin-bottom: 5rem;
+	}
+}
+
+.img-wrap {
+	width: 100%;
+
+	>div {
+		position: relative;
+		padding-bottom: 100%;
+
+		img,
+		video {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.desktop--hide {
+	@media screen and (min-width: $large_tablet + 1) {
+		display: none !important;
+	}
+}
+
+.mobile--hide {
+	@media screen and (max-width: $large_tablet) {
+		display: none !important;
+	}
+}
+
+img {
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+}
+
+
+:root {
+	color-scheme: light dark;
+}

@@ -1,0 +1,53 @@
+include ../mixins/mixins-loader
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-F35XPEW2N3")
+    script.
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ncwsy3ley9");
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-F35XPEW2N3');
+      gtag('event', 'conversion', {'send_to': 'AW-11198341989/ZqnkCJXKjaUYEOXG5Nsp'});
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    meta(name='description' content='Text')
+    title #{title}
+    meta(name='theme-color' content='#4C00FF')
+    block link
+      link(rel='icon' type='image/png' href='assets/images/png/favicon.png')
+      link(rel='apple-touch-icon' href='assets/images/png/favicon.png')
+      link(href='https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&family=PT+Sans:wght@400;700&family=Roboto&display=swap' rel='stylesheet')
+      link(rel='stylesheet' href='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css')
+
+  body(id=pageClass style='overflow:hidden;opacity:0;')
+    include ../includes/preloader
+    .cursor
+      .cursor__video Play
+      .cursor__show
+        p Show more
+      .cursor__arrow
+        svg( viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+          path(d="M1.39876 2.49218L10.3424 2.53456L0 12.6226L1.48353 14.0637L11.9107 3.89094L11.9531 12.7074L14.03 10.7152L13.9876 0.5H3.47571L1.39876 2.49218Z" fill="#020715")
+    .body__wrap
+      include ../includes/header
+      #scrollbar
+        main
+          block content
+        if !hideFooter
+          include ../includes/footer
+    include ../includes/mobile-menu
+    include ../includes/popup
+    block script
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js')
+      script(src='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js')

@@ -1,0 +1,18 @@
+.preloader
+	.preloader__screen.preloader__screen--one
+		.preloader__text You Design
+	.preloader__screen.preloader__screen--two
+		.preloader__text We Develop
+		.round.round--one
+			.round__wrap1
+				.round__wrap2
+		.round.round--two
+			.round__wrap1
+				.round__wrap2
+script.
+	let preloader = document.querySelector('.preloader');
+
+	if (!(document.referrer.indexOf("atstudio") == -1) || !(location.href.indexOf('localhost') == -1)) {
+		preloader.remove();
+		window.PRELOADER = false;
+	}

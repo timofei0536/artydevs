@@ -1,0 +1,76 @@
+// Font
+$primary-f:'Sohne',
+sans-serif;
+
+$primary-f2:'Felix',
+sans-serif;
+
+
+
+// Color
+$bg--black: #020715;
+$bg--black2: #0B1022;
+$bg--white: #fff;
+$color--white: #fff;
+$color--black: #000;
+$color--blue: #061662;
+
+
+$blue: #5A04FF;
+$violet: #8657F1;
+$green: #D3FD50;
+$blue-l: #4757FF;
+$overlay: #181828;
+/*$overlay: #29292E;*/
+/*$overlay: rgb(49,51,60);*/
+
+
+/*OLD*/
+
+$primary-c:#000;
+$secondary-c:#ccc;
+$danger-c:#ff0000;
+
+
+$footer-height: 13rem;
+
+
+
+$p-page: 100;
+$p-page-tablet: 45;
+$p-page-mobile: 15;
+
+
+$wrap:1720;
+$wrap_tablet: 768;
+$wrap_mobile: 340;
+
+
+// Media
+$large_desktop: $wrap + $p-page *2px; // 50 - отступы, которые мы хотим оставить по бокам
+$large_tablet: 1023px;
+$large_mobile: 480px;
+
+
+
+:root {
+  --p-page: 100;
+  --p-margin: 25rem;
+  --header-height: 10rem;
+}
+
+
+@media screen and (max-width:$large_tablet) {
+  :root {
+    --p-page: 45;
+    --p-margin: 15rem;
+  }
+}
+
+@media screen and (max-width:$large_mobile) {
+  :root {
+    --p-page: 15;
+    --p-margin: 10rem;
+  }
+}
+

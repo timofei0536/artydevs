@@ -1,0 +1,22 @@
+section.contact#contact
+	.contact__bg
+	.center-wrap
+		.contact__main-title
+			| #{contactTitle ? contactTitle : "Are you sure you're not losing profit? Just check it"}
+
+		.contact__wrap.toogles.toogles--fade
+			.contact__left
+				.contact__tabs
+					.contact__tab.toogles__item-title.toogles__item-title--active(data-toogles='1') Prices
+					.contact__tab.toogles__item-title(data-toogles='2') Free Demo
+				div.toogles__item.toogles__item--active(data-toogles='1')
+					.toogles__item-content(style='display:block;')
+						div
+							.contact__title Get a Detailed Prices<br class='mobile--hide'> of our last 3 works<br class='mobile--hide'> by email right now
+							.contact__text Two simple clicks  — maximum impact.
+				div.toogles__item(data-toogles='2')
+					.toogles__item-content
+						div
+							.contact__title Have a figma in mind?<br class='mobile--hide'> We will do home<br class='mobile--hide'> page for free!
+							.contact__text Trust is key in partnerships, so we're offering to show<br class='mobile--hide'> you our approach risk-free for you.
+			+form({title:'Just leave a link, and I’ll send you an Estimate for Compare',class:'form--blue'})

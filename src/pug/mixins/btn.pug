@@ -1,0 +1,29 @@
+mixin btn(params)
+	if params.link
+		a.btn(class=params.class href=params.link target=params.target).cursor-hover
+			+btn-content(params)
+	else 
+		.btn(class=params.class).cursor-hover
+			+btn-content(params)
+
+mixin btn-content(params)
+	span.btn__text #{params.text}
+	if params.arrow
+		.btn__arrow
+			div
+				div
+					if params.icon == 'plane'
+						svg(width='23' height='24' viewbox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							g(clip-path='url(#clip0_451_685)')
+								path(d='M20.7948 11.0419L3.64095 1.43407C3.49646 1.35425 3.33108 1.32034 3.16682 1.33683C3.00257 1.35334 2.84725 1.41948 2.72153 1.52645C2.5958 1.63343 2.50564 1.77617 2.46305 1.93566C2.42046 2.09514 2.42747 2.26383 2.48314 2.41923L5.71283 11.4786C5.78397 11.6545 5.78397 11.8512 5.71283 12.027L2.48314 21.0864C2.42747 21.2419 2.42046 21.4105 2.46305 21.57C2.50564 21.7295 2.5958 21.8722 2.72153 21.9791C2.84725 22.0862 3.00257 22.1524 3.16682 22.1688C3.33108 22.1853 3.49646 22.1514 3.64095 22.0716L20.7948 12.4638C20.9219 12.3935 21.0277 12.2905 21.1015 12.1655C21.1751 12.0404 21.2139 11.898 21.2139 11.7528C21.2139 11.6077 21.1751 11.4652 21.1015 11.3402C21.0277 11.2152 20.9219 11.1121 20.7948 11.0419Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none' class='none-fill')
+								path(d='M5.8125 11.7529H12.3125' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+							defs
+								clippath#clip0_451_685
+									rect(width='22' height='24' fill='white' transform='translate(0.5)')
+					else if params.icon == 'number'
+						| #{params.numb}
+					else 
+						svg(width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+							path(d="M1.39876 2.49218L10.3424 2.53456L0 12.6226L1.48353 14.0637L11.9107 3.89094L11.9531 12.7074L14.03 10.7152L13.9876 0.5H3.47571L1.39876 2.49218Z" fill="#020715")
+
+
