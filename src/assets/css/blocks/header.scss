@@ -234,13 +234,7 @@
 		max-width: 12rem;
 		width: 100%;
 		display: inline-block;
-					mix-blend-mode: difference;
-			background-blend-mode: difference;
-		img {
-						mix-blend-mode: difference;
-			background-blend-mode: difference;
-		}
-
+		
 		@media screen and (max-width:$large_tablet) {
 			max-width: 7.5rem;
 		}
