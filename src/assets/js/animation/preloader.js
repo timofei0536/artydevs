@@ -6,6 +6,11 @@ let screen2 = document.querySelector('.preloader__screen--two');
 
 preloaderTl = gsap.timeline();
 
+
+let roundHeigh = '20vh';
+if ( !window.its_desktop ){
+    roundHeigh = '12vh';
+}
 let test = false;
 
 let delay1 = 0;
@@ -60,7 +65,7 @@ preloaderTl.fromTo(screen1.querySelector('.preloader__text'),{
 preloaderTl.fromTo(screen2.querySelector('.round--one .round__wrap1'),{
     height: '0vh',
 },{
-    height: '25vh',
+    height: roundHeigh,
     duration: 1,
     delay: 1,
 },delay1);
@@ -112,7 +117,7 @@ preloaderTl.to(screen2,{
 preloaderTl.fromTo(screen2.querySelector('.round--two .round__wrap1'),{
     height: '0vh',
 },{
-    height: '25vh',
+    height: roundHeigh,
     duration: 1,
     delay: 2,
 },delay2);

@@ -214,6 +214,15 @@ if (window.its_desktop ) {
 
     setTimeout(function(){
 
+
+        let yTitle = '100%';
+        let textDelay = 0
+        if ( !window.its_desktop ) {
+          yTitle = '0%';
+          textDelay = 1;
+        }
+
+
         textTl.fromTo(textLetters,{
           opacity: 0.3,
         },{
@@ -222,24 +231,26 @@ if (window.its_desktop ) {
           duration: 1.5,
         },0);
 
-        // textTl2.fromTo(textLines,{
-        //   opacity: 0,
-        //   y: '40',
-        // },{
-        //   opacity: 1,
-        //   y: '0px',
-        //   stagger: 0.2,
-        //   duration: 1,
+        textTl2.fromTo(textLines,{
+          opacity: 0,
+          y: '100%',
+        },{
+          opacity: 1,
+          y: '0%',
+          stagger: 0.2,
+          duration: 1,
+          delay: textDelay,
 
-        // },0);
+        },0);
+
 
 
         titleTl.fromTo(titleLines,{
           opacity: 0,
-          y: '50',
+          y: yTitle,
         },{
           opacity: 1,
-          y: '0px',
+          y: '0%',
           stagger: 0.2,
           duration: 1,
 

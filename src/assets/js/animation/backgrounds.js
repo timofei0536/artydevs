@@ -2,7 +2,7 @@ export const backgroundsGsap = () => {
 
   // скрыть блок чтоб не маячил на заднем фоне; 
 
-  if (document.querySelector('.mission')) {
+  if (document.querySelector('.mission') && window.its_desktop ) {
 
     let missionTl = gsap.timeline({
       scrollTrigger: {
@@ -13,9 +13,8 @@ export const backgroundsGsap = () => {
       }
     });
 
-    let missionWords = document.querySelectorAll('.mission .word');
-    
 
+    let missionWords = document.querySelectorAll('.mission .word');
 
     missionTl.fromTo(missionWords, 
       {

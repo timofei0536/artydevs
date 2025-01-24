@@ -35,9 +35,9 @@
 
     &__title1  {
         font-size: 9.5rem;
-        // max-width: 64rem;
         margin-bottom: 5rem;
         margin-left: -9rem;
+        overflow: hidden;
         .anim-line-wrap:nth-child(2) {
             margin-left: 9rem;
             @media screen and (max-width:$large_tablet) {

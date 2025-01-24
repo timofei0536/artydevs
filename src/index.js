@@ -56,6 +56,7 @@ import './assets/css/blocks/tooltip.scss';
 import './assets/js/animation/preloader';
 import './assets/js/animation/scrollbarFix';
 import './assets/js/animation/header';
+import './assets/js/animation/header-fixed';
 import './assets/js/animation/cursor';
 import './assets/js/form'
 import './assets/js/times';
@@ -78,7 +79,8 @@ import './assets/js/select';
 // 1) Adaptive;
 	// 1.1 header--fixed;
 	// 1.2 features
-	// 1.2 about
+  // 1.2 about
+	// 1.2 logo-crop
 
 // Minimize HTML;
 // Awwwards description - Portfolio;
@@ -116,9 +118,10 @@ import './assets/js/select';
 //     video.playbackRate = 1.7 // Увеличение скорости в 2 раза
 // }, 2000);
 
-
-if ( document.querySelector('.main-screen__video') ){
- // document.querySelector(".main-sreen__video video").currentTime = 20; 
+if (document.querySelector('.main-screen__video video')) {
+  const videoElement = document.querySelector('.main-screen__video video');
+  videoElement.currentTime = 15;
+  videoElement.pause();
 }
 
 
