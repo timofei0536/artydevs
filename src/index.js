@@ -76,23 +76,19 @@ import './assets/js/select';
 
 
 
-// 1) Adaptive;
-	// 1.1 header--fixed;
-	// 1.2 features
-  // 1.2 about
-	// 1.2 logo-crop
-
-// Minimize HTML;
 // Awwwards description - Portfolio;
-// где-то скорость проседает
+// validation,google speed;
 
 
-// 2) Change NDA Wines &  Speed Optimization ( 1h );
-// 3) youtube -> 20mb, portfolio__short;
+// 1) Change NDA Wines &  Speed Optimization ( 1h );
+// 2) youtube -> 20mb, portfolio__short;
+// 4) Portfolio links;
+// 5) Frontendwoman linkedin decore;
 
-// 4) Email/IN, peoples__email;
-// 5) Portfolio links;
-
+// 1) Adaptive;
+    // 1.1 header--fixed;
+    // 1.2 features;
+// 2) Minimize HTML / Privat repo;
 
 
 // MVP for Awwwards:

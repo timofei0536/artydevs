@@ -149,7 +149,6 @@ if (window.its_desktop ) {
         delay: 1,
       }, 2)
 
-if (window.its_desktop ) {
 
 
       aboutTl.fromTo(peoples, {
@@ -161,8 +160,23 @@ if (window.its_desktop ) {
         opacity: 1,
         duration: 1, // 1 cek
         delay: 1,
+            onStart: function(){
+              window.scrollbar.setMomentum(0, 0);
+             document.querySelector('.about__peoples').classList.toggle('about__peoples--finished');
+            },
+
+            onReverseStart: function(){
+             document.querySelector('.about__peoples').classList.toggle('about__peoples--finished');
+            },
+
+            onReverseComplete: function(){
+             document.querySelector('.about__peoples').classList.toggle('about__peoples--finished');
+            },
+            onComplete: function() {
+             document.querySelector('.about__peoples').classList.toggle('about__peoples--finished'); // Показать хедер после завершения анимации (на выходе)
+            }
+
       }, 2)
-    }
 
 
     

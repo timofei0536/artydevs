@@ -40,6 +40,7 @@
 	&__logo {
 		display: block;
 		width: 14rem;
+		margin-bottom: 2rem;
 
 		 @media screen and (max-width:$large_tablet) {
         	width: 7rem;
