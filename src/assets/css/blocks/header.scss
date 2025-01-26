@@ -92,7 +92,7 @@
 
 
 		&.header--white .header__wrap {
-			background: rgba(black,0.3) !important;
+			background: rgba($blue,0.3) !important;
 		}
 
 
@@ -100,7 +100,7 @@
 
 
 			&__wrap {
-				background: rgba(white,0.5);
+				background: rgba($violet,0.7);
 				border-radius: 10rem;
 				padding: 0.5rem;
 				gap: 5rem;

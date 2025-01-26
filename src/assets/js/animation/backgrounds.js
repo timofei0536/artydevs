@@ -2,38 +2,6 @@ export const backgroundsGsap = () => {
 
   // скрыть блок чтоб не маячил на заднем фоне; 
 
-  if (document.querySelector('.mission') && window.its_desktop ) {
-
-    let missionTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".mission",  // элемент, который вызывает событие
-        start: "top bottom", // начало анимации, когда центр элемента достигнут центра экрана
-        end: "center center", // длительность анимации пиннинга
-        scrub: 1.5, // плавный переход во время прокрутки
-      }
-    });
-
-
-    let missionWords = document.querySelectorAll('.mission .word');
-
-    missionTl.fromTo(missionWords, 
-      {
-        opacity: 0,
-        x: '50px',
-      }, 
-      {
-        opacity: 1,
-        x: '0',
-          stagger: {
-            each: 0.25,
-          },
-          duration: 1,
-      });
-
-
-
-  }
-
 
   if (document.querySelector('.contact')) {
 
