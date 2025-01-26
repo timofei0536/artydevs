@@ -53,7 +53,7 @@
 		 			@media screen and (max-width:$large_tablet) {
 		 				display: flex;
 		 				align-items: center;
- 					justify-content: space-between;
+ 					justify-content: flex-end !important;
  			}
 	}
 
@@ -180,6 +180,18 @@
 		max-width: 10rem;
 		width: 100%;
 		display: inline-block;
+
+		@media screen and (max-width:$large_tablet) {
+			top: 1rem;
+			left: calc( var(--p-page) * 0.1rem );
+			z-index: 999;
+			position: absolute;
+		}
+
+		&--fixed {
+			position: fixed;
+			mix-blend-mode: difference;
+		}
 		
 		@media screen and (max-width:$large_tablet) {
 			max-width: 5rem;

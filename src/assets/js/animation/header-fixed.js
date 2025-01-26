@@ -3,6 +3,7 @@
 
 if (document.querySelector('header')) {
   let header = document.querySelector('.header');
+  let headerLogo = document.querySelector('.header__logo.desktop--hide')
 
 let lastScrollTop = 0;
 
@@ -54,15 +55,17 @@ if (window.its_desktop) {
       onComplete: function(){
         if ( directin == 1) {
           header.classList.add('header--fixed');
+          headerLogo.classList.add('header__logo--fixed');
         } else {
           header.classList.remove('header--fixed');
+          headerLogo.classList.remove('header__logo--fixed');
         }
         
         if ( window.its_desktop ){
           window.setDesktopMenuPosition();
         }
 
-        gsap.to(header, {
+        gsap.to([header, headerLogo], {
           opacity: 1,
           duration: 0.5,
           ease: "power2.out",
