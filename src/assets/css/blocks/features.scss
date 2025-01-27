@@ -29,6 +29,7 @@
 		&--anims {
 			margin-bottom: 0px;
 			padding-bottom: calc(var(--p-margin) * 1.2);
+			margin-top: calc(var(--p-margin) * 1.2);
 		}
 
 		&--phones {
@@ -54,7 +55,7 @@
 			}
 
         	@media screen and (max-width:$large_tablet) {
-        		font-size: 4rem;
+        		font-size: 4.1rem;
         		margin-bottom: 5rem;
         	}
 

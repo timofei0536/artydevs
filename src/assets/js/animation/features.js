@@ -17,18 +17,21 @@ const secondImage = document.querySelector('.features__item--pixel .drag__item--
 const dragContainer = document.querySelector('.features__item--pixel .drag');
 const dragController = document.querySelector('.features__item--pixel .drag__controller');
 
-  let pin = true
+  let pin = true;
+  let start = "center center";
+  let end = "+=1500px";
+
   if ( !window.its_desktop) {
     pin = false;
+    start = "center bottom-=100px";
+    end = "center center";
   }
 
 let animsPixelTl = gsap.timeline({
   scrollTrigger: {
     trigger: dragContainer,
-    // start: "center center",
-    // end: "+=1500px",
-    start: "center bottom-=100px",
-    end: "center center",
+    start: start,
+    end: end,
 
     scrub: 0.1,
     pin: pin,
@@ -187,17 +190,26 @@ if ( window.its_desktop) {
       },0);
 
 
-if (window.its_desktop) {
-  
+  let speedsTrigger = ".features__item--speeds";
+  let speedsEnd  = "+=1500";
+
+  if (!window.its_desktop) {
+    speedsTrigger = ".features__speeds";
+    speedsEnd  = "+=700";
+  }
+
     let tlGS = gsap.timeline({
       scrollTrigger: {
-        trigger: ".features__item--speeds",  // элемент, который вызывает событие
+        trigger: speedsTrigger,  // элемент, который вызывает событие
         start: "center center", // начало анимации, когда центр элемента достигнут центра экрана
-        end: "+=1500", // длительность анимации пиннинга
+        end: speedsEnd, // длительность анимации пиннинга
         scrub: 1.5, // плавный переход во время прокрутки
         pin: ".features__item--speeds", // фиксирует элемент на экране
       }
     });
+
+if (window.its_desktop) {
+
 
     let speedsTitles = document.querySelectorAll('.features__item--speeds .features__info-title');
     
@@ -259,6 +271,7 @@ if (window.its_desktop) {
 
 },500);
 
+  }
 
 
 
@@ -311,6 +324,8 @@ gsap.utils.toArray(".features__speed-round span").forEach(function (el) {
 // ==================================================
 // PHONES
 // ==================================================
+
+if (window.its_desktop) {
 
 
     let phonesTitle = document.querySelector('.features__phones .features__info-title');
