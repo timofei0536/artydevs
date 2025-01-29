@@ -77,9 +77,6 @@ import './assets/js/select';
 
 
 // Awwwards description - Portfolio;
-// validation,google speed;
-
-
 // 1) Change NDA Wines &  Speed Optimization ( 1h );
 // 2) youtube -> 20mb, portfolio__short;
 // 4) Portfolio links;
