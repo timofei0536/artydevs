@@ -76,16 +76,24 @@ import './assets/js/select';
 
 
 
-// Awwwards description - Portfolio;
-// 1) Change NDA Wines &  Speed Optimization ( 1h );
-// 2) youtube -> 20mb, portfolio__short;
-// 4) Portfolio links;
+
+// 0) Awwwards decore;
+// 1) Analytics and form;
+// 2) Portfolio;
+   // 2.1 links;
+   // 2.2 Video;
+   // 2.3 Short Showreel;
+
+// 3) Minimize HTML / Privat repo;
 // 5) Frontendwoman linkedin decore;
 
-// 1) Adaptive;
-    // 1.1 header--fixed;
-    // 1.2 features;
-// 2) Minimize HTML / Privat repo;
+
+
+// 4) Showreel (20mb);
+
+
+
+// ===============================================================
 
 
 // MVP for Awwwards:
@@ -113,8 +121,8 @@ import './assets/js/select';
 
 if (document.querySelector('.main-screen__video video')) {
   const videoElement = document.querySelector('.main-screen__video video');
-  videoElement.currentTime = 15;
-  videoElement.pause();
+  videoElement.currentTime = 9;
+  // videoElement.pause();
 }
 
 
