@@ -105,7 +105,7 @@ if (window.its_desktop) {
  window.addEventListener('load', function() {
 
 
-      let iframe = document.querySelector('.main-screen__wrap iframe');
+      let iframe = document.querySelector('iframe[data-src]');
       if (iframe) {
           let src = iframe.getAttribute('data-src');
           if (src) {

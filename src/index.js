@@ -77,12 +77,16 @@ import './assets/js/select';
 
 
 
-// 0) Awwwards decore;
-// 1) Analytics and form;
+
+// 0) Awwwards Portfolio (5min);
+
+// 1) Analytics and form (30m);
+
 // 2) Portfolio;
-   // 2.1 links;
-   // 2.2 Video;
-   // 2.3 Short Showreel;
+   // 2.1 links ( 1h );
+   // 2.2 Video ( 20m -> Tatoo, Sadbears );
+
+
 
 // 3) Minimize HTML / Privat repo;
 // 5) Frontendwoman linkedin decore;
@@ -90,6 +94,7 @@ import './assets/js/select';
 
 
 // 4) Showreel (20mb);
+// 2.3 Portfolio -> Short Showreel; ( )
 
 
 
@@ -98,7 +103,7 @@ import './assets/js/select';
 
 // MVP for Awwwards:
 
-// 1) header__logo--fixed animation transition
+
 // 2) Online chat;
 	// 3) Calc tabs
 	// 4) Calc info, (?), pro;
@@ -121,7 +126,7 @@ import './assets/js/select';
 
 if (document.querySelector('.main-screen__video video')) {
   const videoElement = document.querySelector('.main-screen__video video');
-  videoElement.currentTime = 9;
+  videoElement.currentTime = 10.5;
   // videoElement.pause();
 }
 
