@@ -77,21 +77,20 @@ import './assets/js/select';
 
 
 
+// 2HOURS:
 
 // 0) Awwwards Portfolio (5min);
-
 // 1) Analytics and form (30m);
-
 // 2) Portfolio;
    // 2.1 links ( 1h );
    // 2.2 Video ( 20m -> Tatoo, Sadbears );
+// 3) Showreel TL;
 
 
+// ===
 
 // 3) Minimize HTML / Privat repo;
 // 5) Frontendwoman linkedin decore;
-
-
 
 // 4) Showreel (20mb);
 // 2.3 Portfolio -> Short Showreel; ( )
@@ -101,20 +100,15 @@ import './assets/js/select';
 // ===============================================================
 
 
-// MVP for Awwwards:
-
-
-// 2) Online chat;
-	// 3) Calc tabs
-	// 4) Calc info, (?), pro;
-// 4) CTA:
-	// 4.1 .choose -> add arrow;
-	// 4.2 Stack hide and show withing filling;
-// 5) Calc btn, CTA journey;
-// 6) Make FAQ;
-// 7) Mobile CTA?? BTNS?
-// 9) Which trips accent? free QA? free Animations?
-// 10) Portfolio videos;
+// 1) Online chat;
+// 2) CTA's:
+	// 2.1 .Choose -> add arrow;
+	// 2.2 Stack hide and show withing filling;
+  // 2.3 Calc btn;
+// 3) Make FAQ;
+// 4) Mobile CTA? BTNS?
+// 5) Which trips accent? free QA? free Animations?
+// 6) Desgin Value Presentation;
 
 
 
