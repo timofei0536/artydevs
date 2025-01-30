@@ -80,12 +80,11 @@ import './assets/js/select';
 // 2HOURS:
 
 // 0) Awwwards Portfolio (5min);
-// 1) Analytics and form (30m);
-// 2) Portfolio;
-   // 2.1 links ( 1h );
+// 1) Analytics and form (15m);
+// 2) Showreel TL ( 15m );
+// 3) Portfolio ( 1h30m );
+   // 2.1 links ( 1h);
    // 2.2 Video ( 20m -> Tatoo, Sadbears );
-// 3) Showreel TL;
-
 
 // ===
 

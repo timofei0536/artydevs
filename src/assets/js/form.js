@@ -7,6 +7,7 @@ $(document).delegate('form', 'submit', function(event) {
 		url: '/send.php',
 		data: data,
 		success: function(result) {
+			alert(result);
 			window.show_popup('thank-you');
 		}
 	});
