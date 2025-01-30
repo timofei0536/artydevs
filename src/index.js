@@ -7,6 +7,7 @@ import './assets/css/animation/main.scss'
 import './assets/css/animation/cursor.scss'
 
 import './assets/js/animation/page-trans';
+import './assets/js/anal';
 
 
 //BLOCKS 
