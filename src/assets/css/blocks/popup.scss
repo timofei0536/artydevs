@@ -81,8 +81,8 @@
             width: 5rem;
             height: 5rem;
             // background-color: $secondary-c;
-            top: 0;
-            right: 1.5rem;
+            top: 0.5rem;
+            right: 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -100,10 +100,10 @@
             div {
                 transition: background 0.2s;
                 width: 100%;
-                height: 2px;
-                width: 1.6rem;
+                height: 1px;
+                width: 2.5rem;
                 position: absolute;
-                background: #000;
+                background: white;
                 z-index: 4;
 
                 &:nth-child(1) {
@@ -118,7 +118,7 @@
 
         &__inner {
             box-shadow: 0px 1px 36px 13px rgba(21, 21, 21, 0.03);
-            background: #fff;
+            background: $blue;
             padding: 5rem 2rem;
             max-width: calc(100% - 3rem);
             width: 100%;
@@ -128,6 +128,7 @@
             text-align: center;
             scrollbar-width: thin;
             scrollbar-color: rgba(#655CED, .5) transparent;
+            border-radius: 1rem;
 
             &::-webkit-scrollbar {
                 width: 5px;
@@ -154,6 +155,13 @@
             @media screen and (max-width:$large_tablet) {
                 margin-bottom: 1.5rem;
             }
+        }
+        &__content {
+            font-size: 2rem;
+            @media screen and (max-width:$large_tablet) {
+                font-size: 1.4rem;
+            }
+
         }
     }
 }
