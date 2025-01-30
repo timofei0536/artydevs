@@ -202,7 +202,7 @@ export const mainScreen = () => {
 						trigger: '.main-screen',
 						start: "bottom bottom",
 						end: "+=" + window.mainTlLength,
-						scrub: 0.1,
+						scrub: 0.5,
 						pin: '.main-screen',
 					},
 				});
@@ -367,7 +367,7 @@ export const mainScreen = () => {
 						trigger: '.numbers',
 						start: "top bottom",
 						end: "+=300",
-						scrub: 0.1,
+						scrub: 0.5,
 						pin: '.main-screen__wrap'
 					},
 				});
