@@ -51,7 +51,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
+	transition: height 0.5s, min-height 0.5s;
 	font-size: 1.6rem;
 	user-select: none;
 	background: $bg--black;

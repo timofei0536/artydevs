@@ -5,8 +5,11 @@ export const atItemsColumnSelfFile =  {
     let start = 'top bottom' || params.elem.getAttribute('data-at-start');
     let end = 'center center' || params.elem.getAttribute('data-at-end');
 
-
     params.elem.style.opacity = 1;
+
+    if ( !window.its_desktop && params.elem.closest('.mission')  ) {
+        return;
+    }    
 
     let elems = document.querySelectorAll(selector);
 

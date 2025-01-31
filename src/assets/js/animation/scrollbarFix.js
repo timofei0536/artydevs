@@ -28,7 +28,6 @@ function addScrollTriggerMobilel() {
   about();
   portfolio();
   atBlock();
-  choose();
   features();
   backgroundsGsap();
   ScrollTrigger.refresh();

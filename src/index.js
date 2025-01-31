@@ -15,7 +15,6 @@ import './assets/css/animation/parallax-magner.scss'
 import './assets/css/animation/scrollbar.scss'
 import './assets/css/blocks/policy.scss';
 
-import './assets/css/blocks/site-links.scss';
 import './assets/css/blocks/toogles.scss';
 import './assets/css/blocks/socials.scss';
 import './assets/css/blocks/btn.scss';
@@ -85,6 +84,8 @@ import './assets/js/select';
 // 2) Portfolio ( 1h30m );
    // 2.1 links ( 1h);
    // 2.2 Video ( 20m -> Tatoo, Sadbears );
+
+// Alina linkdin
 
 
 // ===
