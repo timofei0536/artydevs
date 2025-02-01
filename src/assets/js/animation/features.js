@@ -27,6 +27,8 @@ const dragController = document.querySelector('.features__item--pixel .drag__con
     end = "center center";
   }
 
+
+
 let animsPixelTl = gsap.timeline({
   scrollTrigger: {
     trigger: dragContainer,
@@ -527,9 +529,32 @@ let animsIframeTl = gsap.timeline({
       },0);
 
 
-    function toogleScrollIfram(propValue) {
+    animsIframeTl.fromTo('.features', 
+      {
+        background: '#5A04FF',
+      }, 
+      {
+        background: '#020715',
+        duration: 1,
+      },0);
+
+
+    function toogleScrollIframe(propValue) {
         document.querySelector('.features__animations iframe').style.pointerEvents = propValue;
         document.querySelector('.features__animations iframe').focus();
+
+        if ( propValue == 'none' )   {
+
+          let destination = 10;
+
+          if (window.iframeWindow.scrollbar.limit.y === iframeWindow.scrollbar.offset.y) {
+                destination = iframeWindow.scrollbar.offset.y - 10;
+          }
+          window.iframeWindow.scrollbar.scrollTo(0, destination, 1000);
+
+        }
+
+
 
     }
 
@@ -542,12 +567,12 @@ animsIframeTl
       opacity: 0.999,
       duration: 0.1,
       onStart: () => {
-        toogleScrollIfram('initial');
+        toogleScrollIframe('initial');
         window.scrollbar.setMomentum(0, 0);
         // stopScroll();
       },
       onReverseComplete: () => {
-        toogleScrollIfram('none');
+        toogleScrollIframe('none');
         // resumeScroll();
       },
     },
@@ -557,8 +582,12 @@ animsIframeTl
 
 
 function addSmoothScrollbarHandler(iframe) {
+
+  // отодвигать на 10px scroll;
+  // scrollbar.scrollTo(0, destination, 1500);
+
     iframe.addEventListener('load', () => {
-        const iframeWindow = iframe.contentWindow;
+        window.iframeWindow = iframe.contentWindow;
 
       let previousScrollY = 0; // Переменная для отслеживания предыдущей прокрутки
 
@@ -570,12 +599,14 @@ function addSmoothScrollbarHandler(iframe) {
         if (currentScrollY > previousScrollY) {
 
             if (iframeWindow.scrollbar.limit.y === iframeWindow.scrollbar.offset.y) {
-              toogleScrollIfram('none');
+              toogleScrollIframe('none');
+              // момент выхода из animaiton bottom
             }
 
         } else if (currentScrollY < previousScrollY) {
           if ( currentScrollY == 0 ) {
-            toogleScrollIfram('none');
+            toogleScrollIframe('none');
+            // момент выхода из animaiton top
           }
         }
 

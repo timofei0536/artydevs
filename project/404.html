@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>404</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="https://shindinde.com/wp-content/uploads/2022/11/cropped-favicon-32x32-1-270x270.png">
+  <link href="assets/css/app.css?v=1690278392736" rel="stylesheet"></head>
+  <body>
+    <div class="body__wrap">
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo.svg" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('edna') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+      <header class="header at-block">
+        <div class="center-wrap">
+          <div class="header__wrap at-element" data-at-name="atCustom"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+              <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+          </div>
+        </div>
+      </header>
+      <div id="scrollbar">
+        <main>
+<section class="error">
+  <div class="center-wrap">
+    <div class="error__wrap">
+      <div class="error__subtitle">404</div>
+      <h2 class="error__simple-title simple-title">Unfortunately, this page does not exist.</h2><a class="error__link" href="/">
+        <div class="btn">Go to Main page</div></a>
+    </div>
+  </div>
+</section>
+        </main>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1690278392644"></script></body>
+</html>

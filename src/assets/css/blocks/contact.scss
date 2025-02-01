@@ -17,6 +17,10 @@
         transform: scaleY(1);
         transform-origin: top;
 
+        .features + .contact & {
+            display: none;
+        }
+
         .contact:nth-child(1) & {
             display: none;;
         }

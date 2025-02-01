@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Edna</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="https://shindinde.com/wp-content/uploads/2022/11/cropped-favicon-32x32-1-270x270.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  <link href="assets/css/app.css?v=1738425685545" rel="stylesheet"></head>
+  <body class="body--noanim">
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo.svg" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('edna') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+    <div class="body__wrap">
+      <header class="header at-block at-block--mobile">
+        <div class="center-wrap">
+          <div class="header__wrap at-element" data-at-name="atCustom"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+              <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+            <nav class="header__nav mobile--hide">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="about">about</a></li>
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="approach">approach</a></li>
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="services">services</a></li>
+              </ul>
+            </nav>
+            <div class="header__burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="scrollbar">
+        <main>
+<section class="main-screen at-block at-block--mobile" id="home">
+  <div class="center-wrap">
+    <div class="main-screen__wrap"> 
+      <div class="main-screen__left">
+        <div class="img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/main-screen.webp" type="image/webp"><img src="assets/images/png/main-screen.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__right">
+        <h1 class="main-screen__simple-title simple-title at-element" data-at-name="atTitle">I help <br> high value woman manifest themselves through style.</h1>
+        <div class="main-screen__btn at-element" data-at-name="atCustom" data-at-duration="2" data-at-mobile-direction="y" data-at-mobile-distance="40" data-at-distance="100"><a class="btn single-anchors" href="request">BOOK NOW</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+        </main>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1738425685476"></script></body>
+</html>
