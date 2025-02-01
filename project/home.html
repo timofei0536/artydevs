@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Edna</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="https://shindinde.com/wp-content/uploads/2022/11/cropped-favicon-32x32-1-270x270.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+  <link href="assets/css/app.css?v=1738425685545" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo.svg" alt=""></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('edna') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+    <div class="body__wrap">
+      <header class="header at-block at-block--mobile">
+        <div class="center-wrap">
+          <div class="header__wrap at-element" data-at-name="atCustom"><a class="header__logo single-anchors img-wrap" href="index.html#home">
+              <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+            <nav class="header__nav mobile--hide">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="about">about</a></li>
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="approach">approach</a></li>
+                <li class="header__nav-item"><a class="header__nav-link single-anchors" href="services">services</a></li>
+              </ul>
+            </nav>
+            <div class="header__burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="scrollbar">
+        <main>
+<section class="main-screen at-block at-block--mobile" id="home">
+  <div class="center-wrap">
+    <div class="main-screen__wrap"> 
+      <div class="main-screen__left">
+        <div class="img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/main-screen.webp" type="image/webp"><img src="assets/images/png/main-screen.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__right">
+        <h1 class="main-screen__simple-title simple-title at-element" data-at-name="atTitle">I help <br> high value woman manifest themselves through style.</h1>
+        <div class="main-screen__btn at-element" data-at-name="atCustom" data-at-duration="2" data-at-mobile-direction="y" data-at-mobile-distance="40" data-at-distance="100"><a class="btn single-anchors" href="request">BOOK NOW</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about__wrap">
+    <div class="about__left">
+      <div class="about__small-title small-title">About</div>
+      <div class="about__content content mobile--hide">
+        <p>Welcome,</p>
+        <p>I’m Edna Shindinde, personal style advisor & wardrobe editor.</p>
+        <p>I help women embrace their value by teaching how to build a staple wardrobe in line with their inner power and beauty.</p>
+        <p>The greatest flair of mine is to see talent and strength behind every woman I meet. Whether you build a career, take care of a family, own a business or enjoy life by your rules – you are a high-value woman. You set a precedent & should own it proudly!</p>
+        <p>My vision is for each women to unblushingly celebrate her beauty, to be seen and respected without doubting own looks. Styling is just one way to achieve that. And I couldn’t ask for a better mission, as to guide you on this journey.</p>
+      </div>
+      <div class="about__content content desktop--hide">
+        <p>Welcome,</p>
+        <p>I’m Edna Shindinde, I help women embrace their value by teaching how to build a staple wardrobe in line with their inner power and beauty.</p>
+        <p>The greatest flair of mine is to see talent and strength behind every woman I meet. Whether you build a career, take care of a family, own a business or enjoy life by your rules – you are a high-value woman. You set a precedent & should own it proudly!</p>
+      </div>
+      <div class="about__links"><a class="about__links-item single-anchors" href="services">Services</a><a class="about__links-item single-anchors" href="approach">APPROACH</a><a class="about__links-item single-anchors" href="home">BOOK</a></div>
+    </div>
+    <div class="about__right clip">
+      <div class="img-wrap img-parallax">
+        <div>
+          <picture>
+            <source srcset="assets/images/png/about-img-mob.png" media="(max-width: 480px)">
+            <source srcset="assets/images/png/about-img.webp" type="image/webp"><img src="assets/images/png/about-img.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="approach" id="approach">
+  <div class="center-wrap at-block at-block--mobile">
+    <div class="approach__small-title">MY APPROACH</div>
+    <div class="swiper-button">
+      <div class="swiper-button-prev">
+        <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35356L3.82843 7.53554C4.02369 7.7308 4.34027 7.7308 4.53553 7.53554C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17158C4.7308 0.976314 4.7308 0.659731 4.53553 0.464469C4.34027 0.269207 4.02369 0.269207 3.82843 0.464469L0.646446 3.64645ZM41 3.5L1 3.5L1 4.5L41 4.5L41 3.5Z"></path>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="approach__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I invest Time to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">the woman</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">in front of me.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Your comfort</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">is a priority.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap"> 
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Strive for a</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">sustainable &</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">mindful <span class="mobile--hide">wardrobe.</span></div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img3.webp" type="image/webp"><img src="assets/images/png/approach-img3.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I invest Time to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">the woman</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">in front of me.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Your comfort</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">is a priority.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap"> 
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Strive for a</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">sustainable &</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">mindful <span class="mobile--hide">wardrobe.</span></div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img3.webp" type="image/webp"><img src="assets/images/png/approach-img3.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I invest Time to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">the woman</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">in front of me.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap">
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Your comfort</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">is a priority.</div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img1.webp" type="image/webp"><img src="assets/images/png/approach-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="approach__slider-wrap"> 
+              <div class="approach__slider-left">
+                <div class="approach__simple-title simple-title">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">Strive for a</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">sustainable &</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">mindful <span class="mobile--hide">wardrobe.</span></div>
+                  </div>
+                </div>
+                <div class="approach__content content">
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">I am excited to hear about your story and life experiences that made you who</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">you are. Your personality is the foundaHon of a unique style & I’m here to</div>
+                  </div>
+                  <div class="anim-line-wrap">
+                    <div class="anim-line">explore it. We don’t pretend to be comfortable, we live for it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="approach__slider-right">
+                <div class="img-wrap img-parallax1 clip">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/approach-img3.webp" type="image/webp"><img src="assets/images/png/approach-img3.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="services" id="services">
+  <div class="center-wrap">
+    <div class="services__small-title small-title">services</div>
+    <div class="services__slider desktop--hide">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="services__item">
+              <div class="services__item-img">
+                <div class="img-wrap">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/services__item-img1.webp" type="image/webp"><img src="assets/images/png/services__item-img1.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item-title">Guided Shopping</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="services__item" onclick="show_popup('services-pop2')">
+              <div class="services__item-img">
+                <div class="img-wrap">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/services__item-img2.webp" type="image/webp"><img src="assets/images/png/services__item-img2.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item-title">Style Session</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="services__item" onclick="show_popup('services-pop3')">
+              <div class="services__item-img">
+                <div class="img-wrap">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/services__item-img3.webp" type="image/webp"><img src="assets/images/png/services__item-img3.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item-title">Wardrobe Edit</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="services__item" onclick="show_popup('services-pop4')">
+              <div class="services__item-img">
+                <div class="img-wrap">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/services__item-img4.webp" type="image/webp"><img src="assets/images/png/services__item-img4.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="services__item-title">Special Styling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination slider-pagination"></div>
+    </div>
+    <div class="services__list mobile--hide">
+      <div class="services__item">
+        <div class="services__item-img">
+          <div class="img-wrap img-parallax">
+            <div>
+              <picture>
+                <source srcset="assets/images/png/services__item-img1.webp" type="image/webp"><img src="assets/images/png/services__item-img1.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__item-title">Guided Shopping</div>
+      </div>
+      <div class="services__item">
+        <div class="services__item-img">
+          <div class="img-wrap img-parallax">
+            <div>
+              <picture>
+                <source srcset="assets/images/png/services__item-img2.webp" type="image/webp"><img src="assets/images/png/services__item-img2.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__item-title">Style Session</div>
+      </div>
+      <div class="services__item">
+        <div class="services__item-img">
+          <div class="img-wrap img-parallax">
+            <div>
+              <picture>
+                <source srcset="assets/images/png/services__item-img3.webp" type="image/webp"><img src="assets/images/png/services__item-img3.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__item-title">Wardrobe Edit</div>
+      </div>
+      <div class="services__item">
+        <div class="services__item-img">
+          <div class="img-wrap img-parallax">
+            <div>
+              <picture>
+                <source srcset="assets/images/png/services__item-img4.webp" type="image/webp"><img src="assets/images/png/services__item-img4.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="services__item-title">Special Styling</div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="back mobile--hide">
+            <div class="center-wrap"> 
+              <div class="back__wrap"><a class="back__up single-anchors" href="index.html#home">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 17V1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M1 9L9 1L17 9" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1738425685476"></script></body>
+</html>
