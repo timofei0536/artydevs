@@ -30,7 +30,7 @@ window.showHeader = function() {
       // delay: 0,
     })
 
-    gsap.to('.main-screen__stack-item',{
+    gsap.to(['.main-screen__stack-item', '.main-screen__title-smile.desktop--hide'],{
       opacity: 1,
       duration: 5,
       delay: 3,

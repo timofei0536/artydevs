@@ -44,6 +44,7 @@
 
 		 @media screen and (max-width:$large_tablet) {
         	width: 7rem;
+        	margin-bottom: 0px;
         }
 
 		img {
@@ -150,12 +151,13 @@
 		 	flex-direction: row;
 		 	justify-content: space-between;
 		 	flex-wrap: wrap;
-		 	font-size: 1.8rem;
+		 	font-size: 1.6rem;
 		 }
 
 		&-link {
 			transition: all 0.5s;
 			position: relative;
+
 				&::before {
 					content: "";
 					position: absolute;

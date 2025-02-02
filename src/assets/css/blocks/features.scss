@@ -10,7 +10,7 @@
 	&__animations {
 		position: relative;
 		height: calc(var(--vh, 1vh) * 100);
-		transition: height 0.5s, min-height 0.5s;
+		transition: height 2s, min-height 2s;
 		width: 100%;
 		border-radius: 2rem;
 		overflow: hidden;
@@ -25,6 +25,14 @@
 
 		iframe {
 			pointer-events: none;
+		}
+
+
+		&--speeds {
+        	@media screen and (max-width:$large_tablet) {
+        		overflow: hidden;
+        	}
+
 		}
 
 		&--anims {

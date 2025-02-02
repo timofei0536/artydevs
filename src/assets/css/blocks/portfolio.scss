@@ -47,7 +47,7 @@
 	&__item {
 		width: 100%;
 		height: calc(var(--vh, 1vh) * 100);
-		transition: height 0.5s, min-height 0.5s;
+		transition: height 2s, min-height 2s;
 		position: relative;
 		display: flex;
 		flex-direction: column;
