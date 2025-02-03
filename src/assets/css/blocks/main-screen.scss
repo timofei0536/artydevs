@@ -30,7 +30,7 @@
         margin: auto 0px;
         z-index: 2;
         overflow: visible !important;
-        filter: brightness(1.25);
+        // filter: brightness(1.25);
         @media screen and (max-width:$large_tablet) {
             width: 100%;
         }

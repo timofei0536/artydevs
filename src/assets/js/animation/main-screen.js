@@ -250,7 +250,7 @@ export const mainScreen = () => {
 					animTl.to(window.showreel,{
 						opacity: 1,
 						duration: duration3,
-						filter: "brightness(1)",
+						// filter: "brightness(1)",
 					});
 
 
